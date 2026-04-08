@@ -330,7 +330,7 @@ ul {
 
 .hero-content {
     display: grid;
-    grid-template-columns: 1fr 500px;
+    grid-template-columns: 1fr 600px;
     gap: 60px;
     align-items: start;
 }
