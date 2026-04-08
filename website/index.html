@@ -13,26 +13,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="top-bar">
-            <div class="container">
-                <div class="top-bar-content">
-                    <div class="top-bar-left">
-                        <a href="tel:801-923-4634"><i class="fas fa-phone"></i> 801-923-4634</a>
-                        <a href="mailto:info@relentlessconstruction.io"><i class="fas fa-envelope"></i> info@relentlessconstruction.io</a>
-                        <span><i class="fas fa-clock"></i> Mon-Sat 8AM-6PM</span>
-                    </div>
-                    <div class="top-bar-right">
-                        <span>Follow Us:</span>
-                        <div class="social-icons">
-                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <header class="header header-simple">
         <div class="header-main">
             <div class="container">
                 <div class="header-content">
@@ -56,11 +37,7 @@
                         </ul>
                     </nav>
                     <div class="header-cta">
-                        <a href="tel:801-923-4634" class="header-phone">
-                            <i class="fas fa-phone"></i>
-                            <span>Ready, Contact Now</span>
-                        </a>
-                        <a href="#contact" class="btn btn-primary">Free Estimate</a>
+                        <button class="btn btn-primary" onclick="openFormPopup()">Free Estimate</button>
                     </div>
                     <button class="mobile-menu-btn" aria-label="Toggle menu">
                         <span></span>
@@ -72,56 +49,63 @@
         </div>
     </header>
 
+    <!-- Form Popup Modal -->
+    <div id="form-popup" class="form-popup-overlay" onclick="closeFormPopup(event)">
+        <div class="form-popup-content" onclick="event.stopPropagation()">
+            <button class="form-popup-close" onclick="closeFormPopup()">&times;</button>
+            <iframe
+                src="https://links.relentlessconstruction.io/widget/form/Orv2CdmAE25WUp8hdIoW"
+                style="width:100%;height:700px;border:none;border-radius:3px"
+                id="inline-Orv2CdmAE25WUp8hdIoW"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Main Page contact Form "
+                data-height="828"
+                data-layout-iframe-id="inline-Orv2CdmAE25WUp8hdIoW"
+                data-form-id="Orv2CdmAE25WUp8hdIoW"
+                title="Main Page contact Form "
+            ></iframe>
+        </div>
+    </div>
+
     <!-- Hero Section -->
-    <section class="hero" style="background-image: url('assets/images/hero-bg.webp');">
+    <section class="hero hero-centered" style="background-image: url('assets/images/hero-bg.webp');">
         <div class="hero-overlay"></div>
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <span class="hero-badge">Utah & Arizona's Trusted Construction Experts</span>
-                    <h1>RELENTLESS WORK. <span class="highlight">GUARANTEED.</span></h1>
-                    <p>Your trusted partner for roofing, windows, and home construction services. We deliver quality craftsmanship with unmatched dedication.</p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Get Free Estimate</a>
-                        <a href="tel:801-923-4634" class="btn btn-secondary">Call Now</a>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="hero-stat">
-                            <div class="number">50+</div>
-                            <div class="label">Years Experience</div>
-                        </div>
-                        <div class="hero-stat">
-                            <div class="number">500+</div>
-                            <div class="label">Projects Completed</div>
-                        </div>
-                        <div class="hero-stat">
-                            <div class="number">24HR</div>
-                            <div class="label">Response Time</div>
-                        </div>
-                        <div class="hero-stat">
-                            <div class="number">4.9</div>
-                            <div class="label">Google Rating</div>
-                        </div>
-                    </div>
+            <div class="hero-content-centered">
+                <div class="hero-badge-centered">
+                    <i class="fas fa-star"></i>
+                    <span>UTAH AND ARIZONA'S TRUSTED CONSTRUCTION EXPERTS</span>
                 </div>
-                <div class="hero-form" id="contact">
-                    <iframe
-                        src="https://links.relentlessconstruction.io/widget/form/Orv2CdmAE25WUp8hdIoW"
-                        style="width:100%;height:100%;border:none;border-radius:3px"
-                        id="inline-Orv2CdmAE25WUp8hdIoW"
-                        data-layout="{'id':'INLINE'}"
-                        data-trigger-type="alwaysShow"
-                        data-trigger-value=""
-                        data-activation-type="alwaysActivated"
-                        data-activation-value=""
-                        data-deactivation-type="neverDeactivate"
-                        data-deactivation-value=""
-                        data-form-name="Main Page contact Form "
-                        data-height="828"
-                        data-layout-iframe-id="inline-Orv2CdmAE25WUp8hdIoW"
-                        data-form-id="Orv2CdmAE25WUp8hdIoW"
-                        title="Main Page contact Form "
-                    ></iframe>
+                <h1 class="hero-title-large">RELENTLESS WORK. <span class="highlight">GUARANTEED.</span></h1>
+                <p class="hero-subtitle">From roofing and windows to hardscapes and remodeling, we deliver uncompromising quality and craftsmanship that transforms houses into homes.</p>
+                <div class="hero-buttons-centered">
+                    <button class="btn btn-primary" onclick="openFormPopup()">Get Free Estimate</button>
+                    <a href="tel:801-923-4634" class="btn btn-secondary">Call Now</a>
+                    <a href="services.html" class="btn btn-outline">View Services</a>
+                </div>
+                <div class="hero-stats-centered">
+                    <div class="hero-stat">
+                        <div class="number">50+</div>
+                        <div class="label">Years of Experience</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="number">500+</div>
+                        <div class="label">Projects Completed</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="number">24HR</div>
+                        <div class="label">Response Time</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="number">4.9</div>
+                        <div class="label">Google Rating</div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -163,3 +163,29 @@ window.addEventListener('load', function() {
     const heroImg = new Image();
     heroImg.src = 'assets/images/hero-bg.webp';
 });
+
+// Form Popup Functions
+function openFormPopup() {
+    const popup = document.getElementById('form-popup');
+    if (popup) {
+        popup.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeFormPopup(event) {
+    const popup = document.getElementById('form-popup');
+    if (popup) {
+        if (!event || event.target === popup) {
+            popup.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    }
+}
+
+// Close popup on Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeFormPopup();
+    }
+});

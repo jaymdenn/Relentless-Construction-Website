@@ -2037,3 +2037,183 @@ ul {
 .mobile-menu-btn.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
+
+/* ============================================
+   Centered Hero Section
+   ============================================ */
+.header-simple {
+    border-bottom: none;
+}
+
+.header-simple .top-bar {
+    display: none;
+}
+
+.hero-centered {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content-centered {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero-badge-centered {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(19, 89, 65, 0.3);
+    border: 1px solid var(--primary-color);
+    padding: 12px 24px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-badge-centered i {
+    color: var(--primary-color);
+}
+
+.hero-title-large {
+    font-size: 72px;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 25px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.hero-title-large .highlight {
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.hero-buttons-centered {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.hero-stats-centered {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    padding-top: 40px;
+    border-top: 1px solid var(--border-dark);
+}
+
+.hero-stats-centered .hero-stat {
+    text-align: center;
+}
+
+.hero-stats-centered .hero-stat .number {
+    font-family: var(--font-primary);
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.hero-stats-centered .hero-stat .label {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ============================================
+   Form Popup Modal
+   ============================================ */
+.form-popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-popup-overlay.active {
+    display: flex;
+}
+
+.form-popup-content {
+    background-color: var(--dark-bg-secondary);
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    padding: 20px;
+    clip-path: polygon(0 0, calc(100% - 25px) 0, 100% 25px, 100% 100%, 25px 100%, 0 calc(100% - 25px));
+}
+
+.form-popup-close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 10;
+    transition: var(--transition);
+}
+
+.form-popup-close:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive for centered hero */
+@media (max-width: 768px) {
+    .hero-title-large {
+        font-size: 42px;
+    }
+
+    .hero-stats-centered {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .hero-stats-centered .hero-stat .number {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title-large {
+        font-size: 32px;
+    }
+
+    .hero-badge-centered {
+        font-size: 11px;
+        padding: 10px 16px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+}
