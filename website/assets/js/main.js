@@ -187,5 +187,124 @@ function closeFormPopup(event) {
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         closeFormPopup();
+        closeLightbox();
+    }
+});
+
+// ============================================
+// Portfolio Gallery Filter & Lightbox
+// ============================================
+
+// Gallery Filter
+document.addEventListener('DOMContentLoaded', function() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    if (filterBtns.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.dataset.filter;
+
+                // Filter items
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Click to open lightbox
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', function() {
+                openLightbox(this.querySelector('img').src, this.dataset.category);
+            });
+        });
+    }
+});
+
+// Lightbox Variables
+let currentLightboxItems = [];
+let currentLightboxIndex = 0;
+
+// Open Lightbox
+function openLightbox(imgSrc, category) {
+    const lightbox = document.getElementById('gallery-lightbox');
+    const lightboxImg = document.getElementById('lightbox-image');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+
+    if (lightbox && lightboxImg) {
+        // Get all visible gallery items for navigation
+        const visibleItems = document.querySelectorAll('.gallery-item:not(.hidden)');
+        currentLightboxItems = Array.from(visibleItems).map(item => ({
+            src: item.querySelector('img').src,
+            category: item.dataset.category
+        }));
+
+        // Find current index
+        currentLightboxIndex = currentLightboxItems.findIndex(item => item.src === imgSrc);
+
+        lightboxImg.src = imgSrc;
+        lightboxCaption.textContent = category.charAt(0).toUpperCase() + category.slice(1) + ' Project';
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+// Close Lightbox
+function closeLightbox() {
+    const lightbox = document.getElementById('gallery-lightbox');
+    if (lightbox) {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+// Navigate Lightbox
+function navigateLightbox(direction) {
+    if (currentLightboxItems.length === 0) return;
+
+    currentLightboxIndex += direction;
+
+    // Loop around
+    if (currentLightboxIndex < 0) {
+        currentLightboxIndex = currentLightboxItems.length - 1;
+    } else if (currentLightboxIndex >= currentLightboxItems.length) {
+        currentLightboxIndex = 0;
+    }
+
+    const item = currentLightboxItems[currentLightboxIndex];
+    const lightboxImg = document.getElementById('lightbox-image');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+
+    if (lightboxImg && item) {
+        lightboxImg.src = item.src;
+        lightboxCaption.textContent = item.category.charAt(0).toUpperCase() + item.category.slice(1) + ' Project';
+    }
+}
+
+// Keyboard navigation for lightbox
+document.addEventListener('keydown', function(e) {
+    const lightbox = document.getElementById('gallery-lightbox');
+    if (lightbox && lightbox.classList.contains('active')) {
+        if (e.key === 'ArrowLeft') {
+            navigateLightbox(-1);
+        } else if (e.key === 'ArrowRight') {
+            navigateLightbox(1);
+        }
+    }
+});
+
+// Close lightbox on background click
+document.addEventListener('click', function(e) {
+    const lightbox = document.getElementById('gallery-lightbox');
+    if (lightbox && e.target === lightbox) {
+        closeLightbox();
     }
 });
