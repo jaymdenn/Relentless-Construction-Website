@@ -13,29 +13,38 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <a href="index.html" class="logo">
-                    <img src="assets/images/logo.png" alt="Relentless Construction">
-                </a>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="services.html" class="active">Services</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="areas.html">Service Areas</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <a href="tel:801-923-4634" class="header-phone">
-                    <i class="fas fa-phone"></i>
-                    <span>801-923-4634</span>
-                </a>
-                <button class="mobile-menu-btn" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+    <header class="header header-simple">
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/full-logo.png" alt="Relentless Construction">
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="dropdown">
+                                <a href="services.html">Services <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 5px;"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="windows.html">Window Installation</a></li>
+                                    <li><a href="roofing.html">Roofing</a></li>
+                                    <li><a href="basement.html">Basement Finishing</a></li>
+                                    <li><a href="hardscapes.html">Hardscapes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-cta">
+                        <button class="btn btn-primary" onclick="openFormPopup()">Free Estimate</button>
+                    </div>
+                    <button class="mobile-menu-btn" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -64,17 +73,17 @@
         </div>
     </div>
 
-    <!-- Service Hero -->
-    <section class="service-hero" style="background-image: url('assets/images/service-gutters.webp');">
-        <div class="service-hero-overlay"></div>
+    <!-- Hero Section -->
+    <section class="hero hero-centered" style="background-image: url('assets/images/service-gutters.webp');">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <div class="service-hero-content">
-                <span class="service-badge"><i class="fas fa-water"></i> Gutter Services</span>
-                <h1>Seamless Gutter Systems</h1>
-                <p>Protect your home from water damage with professional gutter installation</p>
-                <div class="service-hero-buttons">
-                    <button class="btn btn-primary btn-large" onclick="openFormPopup()">Get Free Estimate</button>
-                    <a href="tel:801-923-4634" class="btn btn-secondary btn-large">Call: 801-923-4634</a>
+            <div class="hero-content-centered">
+                <h1 class="hero-title-large">SEAMLESS <span class="highlight">GUTTER</span> SYSTEMS</h1>
+                <p class="hero-subtitle">Protect your home from water damage with professional gutter installation. Custom-fabricated seamless gutters for superior protection.</p>
+                <div class="hero-buttons-centered">
+                    <button class="btn btn-primary" onclick="openFormPopup()">Get Free Estimate</button>
+                    <a href="tel:801-923-4634" class="btn btn-secondary">Call Now</a>
+                    <a href="portfolio.html" class="btn btn-outline">View Portfolio</a>
                 </div>
             </div>
         </div>
