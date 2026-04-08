@@ -2288,3 +2288,77 @@ ul {
         font-size: 16px;
     }
 }
+
+/* ============================================
+   Subtle Background Images
+   ============================================ */
+
+/* Base class for sections with background images */
+.section-with-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-with-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.section-with-bg > .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Individual background variations */
+.bg-construction-1::before {
+    background-image: url('../images/bg-construction-1.jpg');
+}
+
+.bg-construction-2::before {
+    background-image: url('../images/bg-construction-2.jpg');
+}
+
+.bg-construction-3::before {
+    background-image: url('../images/bg-construction-3.jpg');
+}
+
+.bg-construction-4::before {
+    background-image: url('../images/bg-construction-4.jpg');
+}
+
+.bg-construction-5::before {
+    background-image: url('../images/bg-construction-5.jpg');
+}
+
+/* Slightly higher opacity variants */
+.section-with-bg.bg-opacity-6::before {
+    opacity: 0.06;
+}
+
+.section-with-bg.bg-opacity-8::before {
+    opacity: 0.08;
+}
+
+/* Position variants */
+.section-with-bg.bg-pos-top::before {
+    background-position: center top;
+}
+
+.section-with-bg.bg-pos-bottom::before {
+    background-position: center bottom;
+}
+
+/* Footer with subtle background */
+.footer.section-with-bg::before {
+    opacity: 0.03;
+}
