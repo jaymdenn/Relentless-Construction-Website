@@ -60,7 +60,7 @@
                             <i class="fas fa-phone"></i>
                             <span>Ready, Contact Now</span>
                         </a>
-                        <a href="#contact" class="btn btn-primary">Free Estimate</a>
+                        <button class="btn btn-primary" onclick="openFormPopup()">Free Estimate</button>
                     </div>
                     <button class="mobile-menu-btn" aria-label="Toggle menu">
                         <span></span>
@@ -72,6 +72,30 @@
         </div>
     </header>
 
+    <!-- Form Popup Modal -->
+    <div id="form-popup" class="form-popup-overlay" onclick="closeFormPopup(event)">
+        <div class="form-popup-content" onclick="event.stopPropagation()">
+            <button class="form-popup-close" onclick="closeFormPopup()">&times;</button>
+            <iframe
+                src="https://links.relentlessconstruction.io/widget/form/Orv2CdmAE25WUp8hdIoW"
+                style="width:100%;height:700px;border:none;border-radius:3px"
+                id="inline-Orv2CdmAE25WUp8hdIoW"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Main Page contact Form "
+                data-height="828"
+                data-layout-iframe-id="inline-Orv2CdmAE25WUp8hdIoW"
+                data-form-id="Orv2CdmAE25WUp8hdIoW"
+                title="Main Page contact Form "
+            ></iframe>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <section class="page-hero" style="background-image: url('assets/images/interior.webp');">
         <div class="page-hero-overlay"></div>
@@ -82,7 +106,7 @@
                     <h1>TRANSFORM YOUR <span class="highlight">BASEMENT</span></h1>
                     <p>Turn your unfinished basement into beautiful, functional living space. From home theaters to guest suites, we bring your vision to life with quality craftsmanship.</p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Get Free Estimate</a>
+                        <button class="btn btn-primary" onclick="openFormPopup()">Get Free Estimate</button>
                         <a href="tel:801-923-4634" class="btn btn-secondary">Call Now</a>
                         <a href="portfolio.html" class="btn btn-outline">View Portfolio</a>
                     </div>
@@ -104,44 +128,6 @@
                             <div class="label">Google Rating</div>
                         </div>
                     </div>
-                </div>
-                <div class="hero-form" id="contact">
-                    <h3>Get Your Free Estimate</h3>
-                    <p class="form-subtitle">No obligation. Response within 24 hours.</p>
-                    <form id="contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" name="firstname" placeholder="First Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="lastname" placeholder="Last Name" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email Address" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone Number" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <select name="service" required>
-                                <option value="">Project Type</option>
-                                <option value="full-finish">Full Basement Finish</option>
-                                <option value="partial">Partial Finish</option>
-                                <option value="bathroom">Basement Bathroom</option>
-                                <option value="bedroom">Basement Bedroom</option>
-                                <option value="theater">Home Theater</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Message" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">Request Free Estimate</button>
-                        <p class="form-disclaimer">I understand & consent to receive calls/text from Relentless – No Obligation</p>
-                    </form>
                 </div>
             </div>
         </div>
@@ -538,7 +524,7 @@
                 <h2>Ready to Finish Your Basement?</h2>
                 <p>Get your free design consultation today.</p>
                 <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary btn-large">Get Free Estimate</a>
+                    <button class="btn btn-primary btn-large" onclick="openFormPopup()">Get Free Estimate</button>
                     <a href="tel:801-923-4634" class="btn btn-secondary btn-large">Call (801) 923-4634</a>
                 </div>
             </div>
@@ -577,6 +563,7 @@
         </div>
     </footer>
 
+    <script src="https://links.relentlessconstruction.io/js/form_embed.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

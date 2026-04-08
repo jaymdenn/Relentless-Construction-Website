@@ -1332,6 +1332,69 @@ ul {
     margin-bottom: 15px;
 }
 
+/* Services Built Grid Layout (Services Page) */
+.services-built-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.service-built-card {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    background-color: var(--dark-bg-secondary);
+    border: 1px solid var(--border-dark);
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px));
+    transition: var(--transition);
+}
+
+.service-built-card:hover {
+    border-color: var(--primary-color);
+}
+
+.service-built-icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+}
+
+.service-built-icon i {
+    font-size: 22px;
+    color: var(--white);
+}
+
+.service-built-info h3 {
+    font-size: 18px;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+.service-built-info p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Services Built Content - Grid with Text side by side */
+.services-built-section .services-built-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* 3-step process layout */
+.process-steps-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 /* ============================================
    Core Values Section
    ============================================ */
@@ -1850,6 +1913,14 @@ ul {
     }
 
     .services-built-content {
+        grid-template-columns: 1fr;
+    }
+
+    .services-built-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-steps-3 {
         grid-template-columns: 1fr;
     }
 
