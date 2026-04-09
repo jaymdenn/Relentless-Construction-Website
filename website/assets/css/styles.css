@@ -2242,12 +2242,18 @@ ul {
         grid-template-columns: 1fr;
     }
 
-    .services-built-content {
+    .services-built-content,
+    .services-built-section .services-built-content {
         grid-template-columns: 1fr;
+        gap: 40px;
     }
 
     .services-built-grid {
         grid-template-columns: 1fr;
+    }
+
+    .services-built-text {
+        text-align: center;
     }
 
     .process-steps-3 {
