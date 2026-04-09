@@ -4,58 +4,48 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Mobile Menu Toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const nav = document.querySelector('.nav');
-    const header = document.querySelector('.header');
 
-    if (mobileMenuBtn && nav) {
-        // Create mobile CTA buttons (shown inside mobile menu)
-        const mobileCta = document.createElement('div');
-        mobileCta.className = 'mobile-nav-cta';
-        mobileCta.innerHTML = `
-            <a href="tel:801-923-4634" class="btn btn-secondary" style="width:100%;margin-bottom:10px;">
-                <i class="fas fa-phone"></i> Call 801-923-4634
-            </a>
-            <button class="btn btn-primary" style="width:100%;" onclick="openFormPopup(); document.querySelector('.mobile-menu-btn').click();">
-                Free Estimate
-            </button>
+    if (mobileMenuBtn) {
+        // Create mobile menu overlay (separate from nav, appended to body)
+        const mobileMenu = document.createElement('div');
+        mobileMenu.id = 'mobile-menu';
+        mobileMenu.innerHTML = `
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="windows.html">— Windows & Doors</a></li>
+                <li><a href="roofing.html">— Roofing</a></li>
+                <li><a href="basement.html">— Basement Finishing</a></li>
+                <li><a href="hardscapes.html">— Hardscapes</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+            <div class="mobile-menu-cta">
+                <a href="tel:801-923-4634" class="btn btn-secondary">
+                    <i class="fas fa-phone"></i> Call 801-923-4634
+                </a>
+                <button class="btn btn-primary" onclick="openFormPopup(); closeMobileMenu();">
+                    Free Estimate
+                </button>
+            </div>
         `;
-        nav.appendChild(mobileCta);
+        document.body.appendChild(mobileMenu);
 
         mobileMenuBtn.addEventListener('click', function() {
             this.classList.toggle('active');
-            nav.classList.toggle('active');
-            // Prevent body scroll when menu is open
-            if (nav.classList.contains('active')) {
-                document.body.classList.add('menu-open');
-                // Move nav to body for proper z-index stacking
-                document.body.appendChild(nav);
-            } else {
+            mobileMenu.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+
+        // Close menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenuBtn.classList.remove('active');
+                mobileMenu.classList.remove('active');
                 document.body.classList.remove('menu-open');
-                // Move nav back to header
-                if (header) {
-                    const headerContent = header.querySelector('.header-content');
-                    const headerCta = header.querySelector('.header-cta');
-                    if (headerContent && headerCta) {
-                        headerContent.insertBefore(nav, headerCta);
-                    }
-                }
-            }
+            });
         });
     }
-
-    // Close mobile menu when clicking a link
-    const navLinks = document.querySelectorAll('.nav-list a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (mobileMenuBtn) {
-                mobileMenuBtn.classList.remove('active');
-            }
-            if (nav) {
-                nav.classList.remove('active');
-            }
-            document.body.classList.remove('menu-open');
-        });
-    });
 
     // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');
@@ -218,11 +208,21 @@ function closeFormPopup(event) {
     }
 }
 
+// Close mobile menu helper
+function closeMobileMenu() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    if (mobileMenu) mobileMenu.classList.remove('active');
+    if (mobileMenuBtn) mobileMenuBtn.classList.remove('active');
+    document.body.classList.remove('menu-open');
+}
+
 // Close popup on Escape key
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         closeFormPopup();
         closeLightbox();
+        closeMobileMenu();
     }
 });
 
