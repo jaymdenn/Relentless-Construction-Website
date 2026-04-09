@@ -2,6 +2,24 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## CRITICAL: Deployment Configuration
+
+**NEVER deploy or commit to any other location than the following:**
+
+- **GitHub Repository**: `https://github.com/Emerald-Beacon/Relentless-Construction-Website.git`
+- **Netlify Project**: `relentless-construction-website` (Site ID: `5761d556-2e2d-409d-a0e2-dac63d2348a2`)
+- **Production URL**: `https://relentlessconstruction.io`
+
+Before ANY deployment, ALWAYS verify:
+1. Run `git remote -v` - must show `Emerald-Beacon/Relentless-Construction-Website`
+2. Run `netlify status` - must show `relentless-construction-website` and `relentlessconstruction.io`
+
+If either check fails, DO NOT proceed. Re-link with:
+```bash
+git remote set-url origin https://github.com/Emerald-Beacon/Relentless-Construction-Website.git
+netlify link --name relentless-construction-website
+```
+
 ## Project Overview
 
 Static website for Relentless Construction, a construction company serving Utah and Arizona (roofing, windows, basement finishing, hardscapes). Built with vanilla HTML, CSS, and JavaScript - no build tools or package managers required.
