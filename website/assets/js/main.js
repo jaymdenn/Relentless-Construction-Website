@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
             nav.classList.toggle('active');
             // Prevent body scroll when menu is open
             if (nav.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
+                document.body.classList.add('menu-open');
             } else {
-                document.body.style.overflow = '';
+                document.body.classList.remove('menu-open');
             }
         });
     }
@@ -36,9 +36,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-list a');
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            mobileMenuBtn.classList.remove('active');
-            nav.classList.remove('active');
-            document.body.style.overflow = '';
+            if (mobileMenuBtn) {
+                mobileMenuBtn.classList.remove('active');
+            }
+            if (nav) {
+                nav.classList.remove('active');
+            }
+            document.body.classList.remove('menu-open');
         });
     });
 

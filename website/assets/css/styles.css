@@ -2809,32 +2809,35 @@ ul {
 
 /* Mobile Menu Active State */
 .nav.active {
-    display: flex;
+    display: flex !important;
     position: fixed;
-    top: 61px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: var(--dark-bg);
     flex-direction: column;
-    padding: 30px;
-    z-index: 999;
+    padding: 80px 30px 30px;
+    z-index: 998;
     overflow-y: auto;
 }
 
 .nav.active .nav-list {
+    display: flex !important;
     flex-direction: column;
     gap: 0;
+    width: 100%;
 }
 
 .nav.active .nav-list li {
     border-bottom: 1px solid var(--border-dark);
+    width: 100%;
 }
 
 .nav.active .nav-list a {
     display: block;
     padding: 16px 0;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .nav.active .nav-list .dropdown-menu {
@@ -2847,6 +2850,7 @@ ul {
     background-color: transparent;
     padding: 0 0 10px 20px;
     min-width: auto;
+    display: block;
 }
 
 .nav.active .nav-list .dropdown-menu a {
@@ -2877,6 +2881,19 @@ ul {
 
 .mobile-menu-btn.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Ensure header stays above mobile menu */
+.header {
+    position: relative;
+    z-index: 1000;
+}
+
+/* Prevent body scroll when menu is open */
+body.menu-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
 }
 
 /* ============================================
