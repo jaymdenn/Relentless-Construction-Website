@@ -3582,7 +3582,6 @@ body.menu-open {
     gap: 0;
     background-color: var(--dark-bg-secondary);
     border: 1px solid var(--border-dark);
-    clip-path: polygon(0 0, calc(100% - 25px) 0, 100% 25px, 100% 100%, 25px 100%, 0 calc(100% - 25px));
     transition: var(--transition);
 }
 
