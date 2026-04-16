@@ -3584,7 +3584,6 @@ body.menu-open {
     border: 1px solid var(--border-dark);
     clip-path: polygon(0 0, calc(100% - 25px) 0, 100% 25px, 100% 100%, 25px 100%, 0 calc(100% - 25px));
     transition: var(--transition);
-    overflow: hidden;
 }
 
 .blog-featured-card:hover {
@@ -3617,14 +3616,17 @@ body.menu-open {
 }
 
 .blog-featured-content {
-    padding: 40px;
+    padding: 40px 40px 40px 44px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-left: 3px solid var(--primary-color);
 }
 
 .blog-featured-label {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 7px;
     font-size: 11px;
     font-weight: 600;
     color: var(--primary-color);
