@@ -134,4 +134,107 @@
         <priority>0.7</priority>
     </url>
 
+    <!-- Locations Index -->
+    <url><loc>https://relentlessconstruction.io/locations/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+    <!-- City Hubs -->
+    <url><loc>https://relentlessconstruction.io/locations/american-fork-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/apache-junction-az/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/avondale-az/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/bountiful-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/buckeye-az/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/centerville-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/chandler-az/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/clearfield-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/cottonwood-heights-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/draper-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/eagle-mountain-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/farmington-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/gilbert-az/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/glendale-az/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/goodyear-az/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/herriman-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/holladay-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/kaysville-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/layton-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/lehi-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/maricopa-az/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/mesa-az/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/midvale-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/millcreek-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/murray-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/ogden-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/orem-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/park-city-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/peoria-az/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/phoenix-az/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/pleasant-grove-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/provo-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/queen-creek-az/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/riverton-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/roy-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/salt-lake-city-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/sandy-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/saratoga-springs-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/scottsdale-az/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/south-jordan-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/spanish-fork-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/surprise-az/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/syracuse-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/taylorsville-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/tempe-az/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/tooele-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/west-jordan-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/west-valley-city-ut/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+    <!-- Service+City Pages -->
+    <url><loc>https://relentlessconstruction.io/locations/chandler-az/roofing/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/chandler-az/windows/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/chandler-az/basement/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/chandler-az/hardscapes/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/chandler-az/siding/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/chandler-az/gutters/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/gilbert-az/roofing/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/gilbert-az/windows/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/gilbert-az/basement/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/gilbert-az/hardscapes/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/gilbert-az/siding/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/gilbert-az/gutters/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/mesa-az/roofing/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/mesa-az/windows/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/mesa-az/basement/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/mesa-az/hardscapes/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/mesa-az/siding/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/mesa-az/gutters/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/ogden-ut/roofing/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/ogden-ut/windows/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/ogden-ut/basement/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/ogden-ut/hardscapes/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/ogden-ut/siding/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/ogden-ut/gutters/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/phoenix-az/roofing/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/phoenix-az/windows/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/phoenix-az/basement/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/phoenix-az/hardscapes/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/phoenix-az/siding/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/phoenix-az/gutters/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/provo-ut/roofing/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/provo-ut/windows/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/provo-ut/basement/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/provo-ut/hardscapes/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/provo-ut/siding/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/provo-ut/gutters/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/salt-lake-city-ut/roofing/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/salt-lake-city-ut/windows/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/salt-lake-city-ut/basement/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/salt-lake-city-ut/hardscapes/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/salt-lake-city-ut/siding/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/salt-lake-city-ut/gutters/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/scottsdale-az/roofing/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/scottsdale-az/windows/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/scottsdale-az/basement/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/scottsdale-az/hardscapes/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/scottsdale-az/siding/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://relentlessconstruction.io/locations/scottsdale-az/gutters/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
 </urlset>
